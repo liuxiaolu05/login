@@ -1,0 +1,41 @@
+.form-condition {
+  padding-bottom: @box-padding;
+  > *{
+    margin-right: 20px;
+  }
+  .form-group{
+    display: inline-block;
+    label{
+      margin-right: 15px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .ivu-select{
+    width: 160px;
+  }
+  input[type=text], select{
+    width: @frame-width;
+    height: @frame-height;
+  }
+  .select180 {
+    input,select{
+      width: 180px;
+    }
+  }
+  .special-select{
+    width: 200px;
+  }
+  &.self-btn-ghost{
+    .ivu-btn-ghost {
+        background-color: #fff;
+        border: 1px solid @border-color;
+    }
+    button.ivu-btn-primary {
+      color: #fff;
+      background-color: #2d8cf0;
+      border-color: #2d8cf0;
+    }
+  }
+}

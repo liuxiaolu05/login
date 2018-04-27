@@ -1,0 +1,110 @@
+@import "_base";
+.add-remark {
+  padding: @box-padding;
+  box-sizing: border-box;
+
+  .ivu-card-head {
+    height:58px;
+    line-height: 58px;
+    padding:0 30px;
+    .remark-title {
+      height:100%;
+      line-height: inherit;
+      position: relative;
+      .remark {
+        margin-right: 30px;
+        color: #fff;
+      }
+      .add-btn{
+        .icon-Addnotes {
+          font-size:14px;
+        }
+        span {
+          text-decoration: underline;
+        }
+      }
+      .return-list {
+        //margin-bottom: @box-padding;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -17px;
+      }
+    }
+  }
+  .info-list {
+    color: #666666;
+    .list {
+      border: 1px solid #c5ced8;
+      border-top: 0 none;
+      .list-title {
+        line-height: 40px;
+        border-bottom: 1px solid #c5ced8;
+        padding: 0 30px;
+        .time {
+          margin-right: 10px;
+        }
+      }
+      .list-text {
+        min-height: 40px;
+        padding: 10px 30px;
+        background-color: #f0f3f5;
+      }
+    }
+
+  }
+  .add-text {
+    width: 500px;
+    height: 270px;
+    background-color: #f0f3f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-250px;
+    margin-top:-135px;
+    display: none;
+    border-bottom: 1px solid #cfd3d3;
+    border-radius: 3px 3px 0 0;
+    box-sizing: border-box;
+    .add-title {
+      line-height: 40px;
+      line-height: 40px;
+      background-color: #1a2229;
+      color: #fff;
+      padding: 0 20px;
+      border-radius: 3px 3px 0 0;
+      .close-btn{
+        //color: #e4393c;
+        color: #fff;
+        float: right;
+        line-height: inherit;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .input-box {
+      .ivu-input {
+        padding:20px;
+        border:0 none;
+        box-shadow: none;
+        box-sizing: border-box;
+      }
+      .ivu-form-item-error .ivu-transfer .ivu-input:hover, .ivu-input:hover {
+        border:0 none;
+        box-shadow: none;
+      }
+      .sub-btn {
+        width: 70px;
+        height: 34px;
+        float: right;
+        margin: 5px 20px 6px 0;
+        background-color: #348fe2;
+        border-color: #1b81de;
+      }
+    }
+
+  }
+  .add-text.show{
+    display: block;
+  }
+}

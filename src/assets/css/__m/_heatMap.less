@@ -1,0 +1,30 @@
+@import "_base";
+.heat-map {
+  padding:@box-padding;
+}
+#map {
+  position: relative;
+  height: 648px;
+}
+#container {
+  width: 100%;
+  height:648px;
+}
+.heat-map {
+  .search-map {
+    margin-bottom:@box-padding;
+    .form-group {
+      display: inline-block;
+      margin-right:20px;
+    }
+    .ivu-select-selection {
+      width:180px;
+    }
+    .ivu-select-item {
+      overflow: hidden;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+    }
+  }
+}

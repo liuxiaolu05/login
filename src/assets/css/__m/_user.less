@@ -1,0 +1,201 @@
+//用户列表、职务列表公共样式
+.user-box {
+  .ivu-table-cell {
+    padding-left:5px;
+    padding-right:5px;
+  }
+
+  .upload {
+    display: inline-block;
+    height:100%;
+    position: relative;
+    margin-left:20px;
+    #inputFile {
+      width:100%;
+      height:100%;
+      opacity:1;
+      filter:alpha(opacity=1);
+      position: absolute;
+      left: 0;
+    }
+  }
+  .ivu-upload {
+    margin-left: 10px;
+    display: inline-block;
+    .ivu-upload-list {
+      margin-top: 2px;
+      position: absolute;
+      margin-left: -21px;
+    }
+  }
+  #page {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  .panel {
+    .ivu-card {
+      margin-bottom: @box-padding;
+      .ivu-card-head {
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #1a2229;
+        border-bottom: 0;
+        border-radius: 3px;
+      }
+      .ivu-card-head p {
+        font-size: 16px;;
+        color: #fff;
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        .return {
+          color: #fff;
+          background-color: @color-active-font;
+          border-color: #1b81de;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          margin-top: -17px;
+        }
+      }
+      .ivu-card-body {
+        padding: 20px;
+        background-color: #d9e0e7;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 0 1px 5px -1px rgba(60, 60, 60, .3);
+        border: 1px solid #b4b4b4;
+        border-top: 0 none;
+      }
+    }
+    .ivu-form-item {
+      min-height:60px;
+      border: 1px solid #b2beca;
+      border-bottom: 0 none;
+      margin-bottom: 0;
+      position: relative;
+      label {
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        padding: 0 20px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+        text-align: justify;
+        -ms-text-align-last: justify;
+        text-align-last: justify;
+
+      }
+    }
+    .ivu-form-item-content {
+      height:100%;
+      min-height:60px;
+      line-height: 60px;
+      font-size: 14px;
+      padding-left: 20px;
+      border-left: 1px solid #b2beca;
+
+    }
+    input {
+      width: 180px;
+      border-top-color: #b0b0b0;
+    }
+    .ivu-input-wrapper {
+      width: 180px;
+      height:100%;
+    }
+    .tip-danger {
+      display: inline-block;
+      background-color: transparent;
+      margin-left: 10px;
+    }
+  }
+  .ivu-form-item:nth-of-type(odd) {
+    background-color: #fff;
+  }
+  .ivu-form-item:nth-of-type(even) {
+    background-color: #f0f3f5;
+  }
+  .ivu-form-item:last-of-type {
+    border:0 none;
+    background-color: transparent;
+    text-align: right;
+    margin-top:20px;
+    .ivu-form-item-content {
+      border:0 none;
+    }
+  }
+  .ivu-form-item:nth-last-of-type(2) {
+    border-bottom:1px solid  #b2beca;
+  }
+}
+//用户列表样式
+.user {
+  .ivu-form-item:nth-last-of-type(2),
+  .ivu-form-item:nth-last-of-type(3){
+    height:60px;
+    input {
+      height:32px;
+      line-height: 32px;
+      padding: 0 7px;
+      border:1px solid #dddee1;
+      box-sizing: border-box;
+      border-radius:4px;
+      &:focus {
+        border-color: #57a3f3;
+        outline: 0;
+        box-shadow: 0 0 0 2px rgba(45, 140, 240, .2)
+      }
+      &:hover {
+        border-color: #57a3f3
+      }
+
+    }
+    input:-moz-ui-invalid:not(output) {
+      box-shadow: none;
+    }
+    input::-moz-placeholder {
+      color: #bbbec4;
+      opacity: 1
+    }
+
+    input:-ms-input-placeholder {
+      color: #bbbec4
+    }
+
+    input::-webkit-input-placeholder {
+      color: #bbbec4
+    }
+  }
+}
+//职务管理列表样式
+.position {
+  .form-group {
+    button {
+      margin-left: 20px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+    .ivu-input-wrapper{
+      width:160px;
+    }
+    .input-box:first-of-type {
+      margin-right: 20px;
+    }
+  }
+}
+//操作记录样式
+.operation {
+  .ivu-input-wrapper {
+    width:inherit;
+  }
+  .date-w180 {
+    input {
+      width:180px;
+    }
+  }
+}
+

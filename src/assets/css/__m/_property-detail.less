@@ -1,0 +1,85 @@
+@import "_base";
+@import "_box";
+.ivu-card-head {
+  background-color: #1a2229;
+  border-bottom:0;
+  height:58px;
+  line-height: 58px;
+  padding:0 20px;
+  border-radius: 3px;
+}
+.ivu-card-body {
+  padding:0;
+}
+
+.ivu-table td {
+  height: 38px;
+}
+.ivu-table th {
+  border-right:0 none;
+}
+
+.detail {
+  padding:@box-padding;
+  box-sizing: border-box;
+
+  .ivu-card {
+    margin-bottom:@box-padding;
+    .ivu-card-head p {
+      font-size: 16px;;
+      color: #fff;
+      line-height: 58px;
+      height: 58px;
+      position: relative;
+      .return {
+        color: #fff;
+        background-color:@color-active-font;
+        border-color:#1b81de;
+        position: absolute;
+        top:50%;
+        right:20px;
+        margin-top:-17px;
+      }
+    }
+     .ivu-card-body {
+       padding:20px;
+       background-color: #d9e0e7;
+       border-radius:0 0 3px 3px;
+       box-shadow: 0 1px 5px -1px rgba(60,60,60,.3);
+       border:1px solid #b4b4b4;
+       border-top:0 none;
+     }
+  }
+
+  .ivu-table-wrapper {
+    border:0;
+  }
+  .ivu-table table{
+    width:100% !important;
+    font-size:14px;
+  }
+  .ivu-table:before {
+    height:0;
+  }
+  .ivu-table-border td {
+    border-right: 1px solid #b2beca;
+    border-left: 1px solid #b2beca;
+  }
+  .ivu-table td, .ivu-table th {
+    text-align: center;
+    border-color: #b2beca;
+  }
+  .ivu-table th {
+    color: #fff;
+    background-color: #1a2229;
+  }
+  .ivu-table:after, .ivu-table:before {
+    background-color: transparent;
+  }
+  tr.ivu-table-row:nth-of-type(even) td{
+    background-color:#f0f3f5;
+  }
+  tr.ivu-table-row:nth-of-type(odd) td {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,319 @@
+@import "__style/normal";
+@import (inline)"__m/iconfont.css";
+@import "__style/tip";
+html{
+  min-width: 1200px;
+  min-height: 680px;
+}
+.font{
+  font-family: '微软雅黑';
+}
+.login{
+  @inner-size: 7.3rem;
+  @control-height: 36px;
+  @group-gap: 20px;
+  @font-color: #a3a6ad;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  font-size: 14px;
+  //color: #fff;
+  background: url(../image/bg.jpg) #001534 center/cover no-repeat;
+  h1{
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    text-align: center;
+    font-weight:600;
+    line-height: 26px;
+    height: 26px;
+    i {
+      height:inherit;
+      line-height: inherit;
+      font-weight: 600;
+    }
+  }
+  input{
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: rgba(2, 18, 56, 0.9);
+    border-radius:2px;
+    color: @font-color;
+    &:focus {
+      background-color: #fff;
+    }
+    .font;
+  }
+  button{
+    width: 40%;
+    font-size: 16px;
+    line-height:  @control-height;
+    text-align: center;
+    background-color: rgba(2, 18, 56, 0.9);
+    .font;
+  }
+  .con-bg{
+    position: relative;
+    width: 100%;
+    height:100%;
+    .content{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      justify-content: center;
+    }
+    .inner{
+      display: flex;
+      align-items: center;
+      width: 5.5rem;
+      height: 3.3rem;
+      vertical-align: middle;
+      background: url(../image/frame.png) center/contain no-repeat;
+      background-size:100%;
+      float: left;
+      margin-left: 35px;
+      z-index: 11;
+    }
+    div.inner-big{
+      background: url(../image/frame_big_03.png) center/contain no-repeat;
+      background-size: 100%;
+      height: 5.6rem;
+    }
+    .inner-box{
+      margin: 0 auto;
+      width: 80%;
+      .edit-pwd {
+        padding:0 12px;
+        line-height:@control-height;
+        border:1px solid #d46f16;
+        box-sizing: border-box;
+        margin-bottom:@group-gap;
+      }
+    }
+    .login-bg{
+      position: relative;
+      width: @inner-size;
+      height: @inner-size;
+      z-index: 10;
+      float: left;
+      .out-ring{
+        width: 100%;
+        height: 100%;
+        background: url(../image/ring.png) center/contain no-repeat;
+        background-size:100%;
+        opacity: 0.4;
+      }
+      .login-ring{
+        position: absolute;
+        top: @inner-size / 2 - 1.22;
+        right: @inner-size / 2 - 1.22;
+        width: @inner-size - 0.3;
+        height: 2.4rem ;
+        background: url(../image/logo.png) center/contain no-repeat;
+        background-size:100%;
+      }
+    }
+    .bg-font{
+      span{
+        position: absolute;
+        .font;
+      }
+      span:nth-child(1){//数据科学家
+        font-size: 0.48rem;
+        color: #103766;
+        top: 1rem;
+        right: 7.55rem;
+      }
+      span:nth-child(2){//高逼格
+        font-size: 0.48rem;
+        color: #01306a;
+        top: 6.34rem;
+        left: 3rem;
+      }
+      span:nth-child(3){//共赢
+        font-size: 0.36rem;
+        color: #124890;
+        left: 8.2rem;
+        bottom: 1rem;
+      }
+      span:nth-child(4){//人工智能
+        font-size: 0.36rem;
+        color: #164378;
+        top: 2.9rem;
+        right: 3.5rem;
+      }
+      span:nth-child(5){//独特视角
+        font-size: 0.24rem;
+        color: #065ca3;
+        top: 2.63rem;
+        left: 3.78rem;
+      }
+      span:nth-child(6){//战略
+        font-size: 0.24rem;
+        color: #3e6ebd;
+        top: 6.6rem;
+        left: 12rem;
+      }
+      span:nth-child(7){//颠覆式创新
+        font-size: 0.36rem;
+        color: #03438a;
+        top: 6.04rem;
+        left: 1.02rem;
+      }
+      span:nth-child(8){//AI
+        font-size: 0.72rem;
+        color: #454699;
+        right: 0.93rem;
+        bottom: 2.8rem;
+      }
+      span:nth-child(9){//产品共鸣
+        font-size: 0.24rem;
+        color: #045ba4;
+        top: 7.46rem;
+        left: 4.16rem;
+      }
+      span:nth-child(10){//生态体系
+        font-size: 0.14rem;
+        color: #1a4fa7;
+        top: 5.74rem;
+        left: 9.68rem;
+      }
+      span:nth-child(11){//赋能
+        font-size: 0.48rem;
+        color: #141543;
+        right: 2.9rem;
+        bottom: 3rem;
+      }
+      span:nth-child(12){//精准
+        font-size: 1.2rem;
+        color: #023776;
+        top: 5.5rem;
+        left: 7.3rem;
+      }
+      span:nth-child(13){//洞察
+        font-size: 0.3rem;
+        color: #224296;
+        top: 4rem;
+        left: 10rem;
+      }
+      span:nth-child(14){//预测
+        font-size: 0.3rem;
+        color: #061d50;
+        right: 10.5rem;
+        bottom: 2.4rem;
+      }
+      span:nth-child(15){//数据点亮人生
+        font-size: 0.3rem;
+        color: #022d62;
+        bottom: 1.1rem;
+        left: 2.65rem;
+      }
+      span:nth-child(16){//智能
+        font-size: 0.6rem;
+        color: #291d5b;
+        right: 6.35rem;
+        bottom: 2rem;
+      }
+      span:nth-child(17){//大数据
+        font-size: 0.36rem;
+        color: #164378;
+        top: 2.46rem;
+        right: 6.55rem;
+      }
+    }
+  }
+
+  .form{
+    // margin-bottom: 30px;
+  }
+  .form-group{
+    display: flex;
+    width: 100%;
+    height: @control-height;
+    margin-bottom: @group-gap;
+    > *{
+      height: 100%;
+    }
+  }
+  .input-group{
+    position: relative;
+    i{
+      font-size: 16px;
+      width: 30px;
+      line-height: @control-height;
+      text-align: center;
+      color: #334469;
+      background-color:transparent;
+      position: absolute;
+      right:0;
+    }
+  }
+  .code-group{
+    >a{
+      line-height: @control-height;
+      color: #fff;
+    }
+    >input{
+      width: 1.3rem;
+    }
+    >img{
+      margin: 0 0.15rem;
+      width: 1.2rem;
+      line-height: @control-height;
+      cursor: pointer;
+    }
+  }
+  .btn-group{
+    display: flex;
+    justify-content: space-between;
+    button{
+      width: 100%;
+      color: @font-color;;
+    }
+  }
+  .tip-danger{
+    font-size: 13px;
+    margin: -18px 0 10px;
+    i {
+      margin-right:3px;
+    }
+  }
+  .iconfont{
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 1600px){
+  .login {
+    @height28: 28px;
+    button {
+      font-size: 14px;
+      line-height: @height28;
+    }
+    .form-group {
+      height: @height28;
+    }
+    input ,.tip-danger {
+      font-size: 12px;
+    }
+    input{
+      padding: 4px 12px 6px 12px;
+    }
+    .con-bg .inner-box .edit-pwd{
+      line-height: @height28;
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+    .tip-danger {
+      font-size: 12px;
+      margin: -23px 0 10px;
+    }
+    .input-group i{
+      line-height: @height28;
+    }
+
+  }
+}

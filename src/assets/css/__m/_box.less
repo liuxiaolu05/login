@@ -1,0 +1,84 @@
+@import "_base";
+
+.ower-table{
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.box{
+  padding: @box-padding;
+}
+tr.ivu-table-row-hover td ,.details-table .detail-con:hover{
+  background-color: #ddeaf3!important;
+}
+.table{
+ // position: relative;
+  .loading {
+   // top:50%;
+    position: fixed;
+    background: rgba(255,255,255,.5);
+  }
+  .ivu-table {
+    font-size:14px;
+    background-color: transparent;
+    .ivu-table td {
+      background-color: #fff;
+    }
+
+    tr.ivu-table-row:nth-of-type(even) td{
+      background-color:#f0f3f5;
+    }
+    tr.ivu-table-row:nth-of-type(odd) td {
+      background-color: #fff;
+    }
+    th {
+      color: #fff;
+      background-color: #1a2229;
+      text-align: center;
+      line-height: 40px;
+    }
+    td {
+      height: 38px;
+      text-align: center;
+      color: #666666;
+    }
+  }
+  .ivu-table-border td {
+    border-color: #b2beca;
+  }
+  .ivu-table th {
+    border-right:0 none;
+  }
+  .ivu-table-body{
+    border-bottom:1px solid #b2beca;
+  }
+  .ivu-table-sort {
+    width: 11px;
+    height: 20px;
+  }
+  .ivu-table-sort i {
+    height: 12px;
+    line-height: 12px;
+  }
+  .ivu-icon-arrow-up-b:before {
+    content: "\f10d";
+    font-size: 16px;
+  }
+  .ivu-icon-arrow-down-b:before {
+    content: "\f104";
+    font-size: 16px;
+  }
+  .ivu-table-header thead .ivu-table-cell i{
+    font-style: normal
+  }
+}
+.ivu-select-item {
+  padding: 7px;
+}
+
+
+
+
+
+
+
+
